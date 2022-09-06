@@ -1,6 +1,6 @@
 # Icom Terminal Mode Protocol
 
-The terminal mode protocol of the Icom ID52 is a serial protocol which on the is routed as RS232 over USB. Its purpose is to send voice and data transmissions to a computer application which then routes them over a network to a receiver gateway or reflector.
+The terminal mode protocol of the Icom ID52 is a serial protocol which is routed as RS232 over USB. Its purpose is to send voice and data transmissions to a computer application which then routes them over a network to a receiver gateway or reflector.
 
 ## High Level
 
