@@ -15,6 +15,7 @@ The DPlus protocol is used to route DStar data from a repeater to a reflector or
 9. client sends end of transmission
 10. server sends a c0 packet?!
 11. go back to 5.
+12. disconnect
 
 
 ## Packets
