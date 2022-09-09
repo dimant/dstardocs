@@ -237,5 +237,5 @@ Example:
 | 2    | 0x0b           |
 | 3    | 0x00           |
 | 4..5 | session id     |
-| 6    | 0x3E           |
-| 7..9 | 0x00           |
+| 6    | number of received packets |
+| 7..9 | 0x00 maybe it's a long?    |
