@@ -226,4 +226,16 @@ Example:
 
 ### Ack End of Transmission
 
-0000  0a c0 0b 00 7d 37 3e 00 00 00                     ....}7>...
+Example:
+
+    0000  0a c0 0b 00 7d 37 3e 00 00 00                     ....}7>...
+
+| Byte | Description |
+|------|-------------|
+| 0    | Len (10 bytes) |
+| 1    | 0xC0           |
+| 2    | 0x0b           |
+| 3    | 0x00           |
+| 4..5 | session id     |
+| 6    | 0x3E           |
+| 7..9 | 0x00           |
