@@ -17,6 +17,13 @@ The DPlus protocol is used to route DStar data from a repeater to a reflector or
 11. go back to 5.
 12. disconnect
 
+A note on nomenclature:
+
+- **zone** the local repeater. Also called Rpt1 or source.
+- **area** the destination repeater. Also called Rpt2 or destination.
+- **urcall** the callsign of the station you are trying to reach.
+- **mycall** the callsign of your station.
+- **suffix** the 4 character callsign suffix of your station. e.g. W1AW / ID52 has the suffix 'ID52'
 
 ## Packets
 
