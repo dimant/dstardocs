@@ -170,13 +170,12 @@ The data frame is similar to the one sent from the transceiver to the computer.
 |--------|-------|-------------------|
 | 0      | 0x10  | Length (16 bytes) |
 | 1      | 0x22  | Type              |
-| 2      | 0x00  | Packet Id         |
-| 3      | 0x00  | Sequence Id       |
+| 2      |       | Sequence Id         |
+| 3      |       | Frame Type (bitmask 0xC0 |
+| 3      |       | Number Id (bitmask 0x1F |
 | 4..12  |       | 9 Bytes AMBE data |
 | 13..15 |       | 3 Bytes slow data |
 | 16     | 0xFF  | End               |
-
-The packet id goes from 0 to 20 (decimal) and then wraps back to 0. The sequence id remains the same for each uninterrupted transmission.
 
 ### Frame To Transceiver Ack
 
