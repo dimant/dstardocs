@@ -109,13 +109,14 @@ Immediately following the header packet are packets with voice and data payloads
 |--------|-------|-------------------|
 | 0      | 0x10  | Length (16 bytes) |
 | 1      | 0x12  | Type              |
-| 2      | 0x00  | Packet Id         |
-| 3      | 0x00  | Sequence Id       |
+| 2      | 0x00  | Sequence Id         |
+| 3      |       | Frame Type (bitmask 0xC0)|
+| 3      |       | Number (bitmask 0x1F) |
 | 4..12  |       | 9 Bytes AMBE data |
 | 13..15 |       | 3 Bytes slow data |
 | 16     | 0xFF  | End               |
 
-The packet id goes from 0 to 20 (decimal) and then wraps back to 0. The sequence id remains the same for each key-down of the transceiver.
+The sequence id goes from 0 to 255 decimal and then wraps around. The number goes from 0 to 20 and then wraps around.
 
 ### Header To Transceiver
 
